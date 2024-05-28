@@ -10,13 +10,17 @@ const Search = () => {
     e.preventDefault();
     if (user) {
       searchGithubUser(user);
-      // more logic coming up soon
-      //optional
       setUser("");
+      } else {
+        alert("Please enter a username");
+        
+   
+      
     }
 
-    console.log(user);
+    
   };
+  
   return (
     <section className="section">
       <Wrapper className="section-center">
